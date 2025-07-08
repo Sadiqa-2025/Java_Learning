@@ -7,6 +7,6 @@ public class FactorialOfNumber
             result= result * i;
 
         }
-        System.out.println("The fibonacci of the given number is " + result);
+        System.out.println("The factorial of the given number is " + result);
     }
 }
