@@ -15,7 +15,7 @@ public class ChildClass02 extends ChildClass01 {
         System.out.println("static method of child class 02");
     }
 
-    public static void main(String[] args) {
+ /*   public static void main(String[] args) {
         ChildClass02 obj3 = new ChildClass02();
-    }
+    }*/
 }
