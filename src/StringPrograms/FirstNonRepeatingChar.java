@@ -6,22 +6,23 @@ package StringPrograms;
 
 public class FirstNonRepeatingChar {
     public static void main(String[] args) {
-        String s = "abbccddeff";
-        int count = 1;
+       // String s = "abbccddeff";
+        String s = "abbccddef";
 
         for(int i=0; i<s.length(); i++){
             char ch = s.charAt(i);
-            for(int j=1; j<s.length()-1; j++){
-                if(s.charAt(i)==s.charAt(j) && i!=j){
-                    count++;
+            boolean unique = true;
+            for(int j=0; j<s.length(); j++) {
+                if (s.charAt(i) == s.charAt(j) && i != j) {
+                    unique = false;
+                    break;
                 }
-                if(count==1){
+            }
+                if(unique == true){
                     System.out.println(s.charAt(i));
                     break;
                 }
-                break;
             }
-            break;
         }
-    }
+
 }
