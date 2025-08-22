@@ -7,15 +7,16 @@ Input: String: ""hello world"", char[] ch = {'l','o'}
 Output: ""he*** w*r*d"""
  */
 public class ReplaceEveryOccurence {
+
+    static String replacedString(String input, char[] ch){
+        for(int i=0; i<ch.length; i++){
+            input = input.replace(ch[i], '*');
+        }
+        return input;
+    }
     public static void main(String[] args) {
         String input = "hello world";
         char[] ch = {'l', 'o'};
-        String result = "";
-
-        //check the elements of char[] is present in input.charAt()
-        for(int i=0; i<ch.length; i++){
-           input = input.replace(ch[i], '*');
-        }
-        System.out.println(input);
+        replacedString(input, ch);
     }
 }
