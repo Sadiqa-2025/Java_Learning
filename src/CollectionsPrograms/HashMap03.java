@@ -1,6 +1,7 @@
 package CollectionsPrograms;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /*
 "Take a string and count frequency of each character using HashMap<Character, Integer>
@@ -19,6 +20,10 @@ public class HashMap03 {
         for(char x : str.toCharArray()){
          h.put(x, h.getOrDefault(x, 0)+1);
         }
-        System.out.println(h);
+       // System.out.println(h);
+        //To read the vaues from Map
+        for(Map.Entry<Character, Integer> x: h.entrySet()){
+            System.out.println(x.getKey()+ "---->"+ x.getValue());
+        }
     }
 }
