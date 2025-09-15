@@ -9,5 +9,8 @@ public class ChildClassHI03 extends ParentClass001{
         ChildClassHI03 obj = new ChildClassHI03();
         obj.method1();
         obj.method03();
+        ChildClassHI02 obj1 = new ChildClassHI02();
+        obj1.method1();
+
     }
 }

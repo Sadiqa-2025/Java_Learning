@@ -4,6 +4,10 @@ public class Constructor01 {
         System.out.println("Default constructor");
     }
 
+    {
+        System.out.println("Non static bloc IIB");
+    }
+
     Constructor01(int a, int b) {
         System.out.println("2 Param constructor");
         System.out.println(this.x=a);

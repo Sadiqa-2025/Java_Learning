@@ -3,6 +3,7 @@ package StringPrograms;
 public class VowelsConsonants {
     public static void main(String[] args) {
         String s = "GoodMorningBadNight";
+        s=s.concat("a");
         int vCount = 0;
         int cCount = 0;
         for(int i=0; i<s.length() ; i++) {
@@ -19,5 +20,10 @@ public class VowelsConsonants {
             }
         }
         System.out.println("Number of Consonants is " + cCount);
+        System.out.println(s);
     }
 }
+
+// include an if else to count consonants.
+// work on upper and lower case characters.
+// Try to write same logic usign advance for loop(toCharArray() method)

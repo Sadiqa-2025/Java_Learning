@@ -1,5 +1,6 @@
 package CollectionsPrograms;
 
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -22,8 +23,11 @@ public class LinkedListReverseOrder {
         num.removeFirst();
         num.removeLast();
         System.out.println(num);
-        for(int i=num.size()-1; i>=0; i--){
+        Collections.reverse(num);
+        System.out.println(num);
+        Collections.reverseOrder();
+      /*  for(int i=num.size()-1; i>=0; i--){
             System.out.println(num.get(i));
-        }
+        }*/
     }
 }

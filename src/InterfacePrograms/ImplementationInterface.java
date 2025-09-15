@@ -1,6 +1,7 @@
 package InterfacePrograms;
 
 public class ImplementationInterface implements Interface01{
+
     public void abstractMethod() {
         System.out.println("Implementation of abstract method");
     }

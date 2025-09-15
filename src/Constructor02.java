@@ -19,7 +19,6 @@ public class Constructor02 {
     }
 
     public static void main(String[] args) {
-       // Constructor02 obj = new Constructor02();
         Constructor02 obj1 = new Constructor02(20);
         new Constructor02("HHello");
     }
