@@ -15,7 +15,6 @@ public class AnagramCheck {
         }
 
             //traverse through first string
-
             for (int i = 0; i < str1.length(); i++) {
                // boolean present = false;
                 char ch = str1.toLowerCase().charAt(i);
