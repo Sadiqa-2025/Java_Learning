@@ -14,7 +14,8 @@ public class ExtractNumbers {
         int sum=0;
         for(char ch : c){
             if(Character.isDigit(ch)){
-               sum = sum + ch;
+               sum = sum + Integer.parseInt(Character.toString(ch));
+               // System.out.println(ch);
             }
         }
         System.out.println(sum);
